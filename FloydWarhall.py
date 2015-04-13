@@ -52,8 +52,8 @@ for k in range(n):
             b[i][j] = div(1, (div(1, b[i][j]) + div(1, (b[i][k] + b[k][j]))))
 
 #CppWork
+tm2 = time.clock()
 cxx_fast_dot = matrixops.floyd_warshall(b1)
-
 
 file = open(sys.argv[2], 'w')
 file.write("Python:\n")
